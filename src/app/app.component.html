@@ -1,2 +1,79 @@
+<mat-sidenav-container [hasBackdrop]="false">
+  <mat-sidenav #leftSideDrawer role="navigation">
+    <mat-nav-list>
+      <div mat-list-item>
+      <button mat-icon-button (click)="toggleSideMenues()">
+        <mat-icon>clear</mat-icon>
+        CLOSE
+      </button>
+      </div>
+      <div mat-list-item>
+        Menu
+      </div>
+      <a mat-list-item
+         routerLink="/home"
+         routerLinkActive="is-active"
+         [routerLinkActiveOptions]="{exact:true}"
+         (click)="toggleSideMenues()"
+         (mouseover)="onNavigationHover('livingroom')">
+        <span class="label">Home</span>
+      </a>
+      <a mat-list-item
+         routerLink="/kitchens"
+         routerLinkActive="is-active"
+         (click)="toggleSideMenues()"
+         (mouseover)="onNavigationHover('kitchens')">
+        <span class="label">Kitchens</span>
+      </a>
+      <a mat-list-item
+         routerLink="/bathrooms"
+         routerLinkActive="is-active"
+         (click)="toggleSideMenues()"
+         (mouseover)="onNavigationHover('bathrooms')">
+        <span class="label">Bathrooms</span>
+      </a>
+      <a mat-list-item
+         routerLink="/bedrooms"
+         routerLinkActive="is-active"
+         (click)="toggleSideMenues()"
+         (mouseover)="onNavigationHover('bedrooms')">
+        <span class="label">Bedrooms</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav mode="side"
+               position="end"
+               #rightSideDrawer>
+    <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'>
 
-<router-outlet></router-outlet>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div fxHide.gt-xs>
+        <button mat-icon-button (click)="toggleSideMenues()">
+          <mat-icon>menu</mat-icon>
+          MENU
+        </button>
+      </div>
+      <div fxFlex fxLayout fxLayoutAlign="center" fxHide.xs fxFlex="80">
+        <span routerLink="/">
+          Majorelle & company
+        </span>
+      </div>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs fxLayoutGap="5px">
+        <a>
+          f
+        </a>
+        <a>
+          i
+        </a>
+        <a>
+          yt
+        </a>
+      </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
