@@ -3,12 +3,12 @@ import {Component, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['../sass-files/components/side-bar/side-bar.scss']
 })
 export class AppComponent {
   @ViewChild('leftSideDrawer') public leftSideDrawer: any;
   @ViewChild('rightSideDrawer') public rightSideDrawer: any;
-  private rightSideDrawerImgSrc: string = 'livingroom';
+  public rightSideDrawerImgSrc: string = 'livingroom';
 
   public toggleSideMenues() {
     this.leftSideDrawer.toggle();
