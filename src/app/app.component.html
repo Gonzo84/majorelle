@@ -2,10 +2,10 @@
   <mat-sidenav #leftSideDrawer role="navigation">
     <mat-nav-list>
       <div mat-list-item>
-      <button mat-icon-button (click)="toggleSideMenues()">
-        <mat-icon>clear</mat-icon>
-        CLOSE
-      </button>
+        <button mat-icon-button (click)="toggleSideMenues()">
+          <mat-icon>clear</mat-icon>
+          CLOSE
+        </button>
       </div>
       <div mat-list-item>
         Menu
@@ -41,22 +41,26 @@
       </a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav mode="side"
-               position="end"
+  <mat-sidenav position="end"
                #rightSideDrawer>
     <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'>
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar>
       <div fxHide.gt-xs>
         <button mat-icon-button (click)="toggleSideMenues()">
           <mat-icon>menu</mat-icon>
           MENU
         </button>
       </div>
-      <div fxFlex fxLayout fxLayoutAlign="center" fxHide.xs fxFlex="80">
-        <span routerLink="/">
+      <div fxFlex
+           fxLayout
+           fxLayoutAlign="center"
+           fxHide.xs
+           fxFlex="80">
+        <span routerLink="/"
+              class="navigation-logo-text">
           Majorelle & company
         </span>
       </div>

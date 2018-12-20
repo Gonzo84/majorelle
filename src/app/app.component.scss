@@ -1,18 +1,29 @@
+a {
+  text-decoration: none;
+  color: white;
+}
 mat-sidenav-container, mat-sidenav-content, mat-sidenav {
   height: 100vh;
-}
-
-.is-active {
-  color: #bb9a6a;
 }
 
 mat-sidenav {
   width: 50vw;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+.mat-toolbar {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+  .navigation-logo-text{
+    color: #bb9a6a;
+  }
+}
+
+.is-active {
+  color: #bb9a6a;
 }
 
 .navigation-items {
