@@ -49,10 +49,8 @@
   <mat-sidenav-content>
     <mat-toolbar>
       <div fxHide.gt-xs>
-        <button mat-icon-button (click)="toggleSideMenues()">
-          <mat-icon>menu</mat-icon>
-          MENU
-        </button>
+          <i class="fa fa-bars"
+             (click)="toggleSideMenues()"></i> MENU
       </div>
       <div fxFlex
            fxLayout
@@ -66,18 +64,19 @@
       </div>
       <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs fxLayoutGap="5px">
         <a>
-          f
+          <span class="fa fa-facebook"></span>
         </a>
         <a>
-          i
+          <span class="fa fa-instagram"></span>
         </a>
         <a>
-          yt
+          <span class="fa fa-youtube"></span>
         </a>
       </div>
     </mat-toolbar>
     <main>
       <router-outlet></router-outlet>
+
     </main>
   </mat-sidenav-content>
 </mat-sidenav-container>
