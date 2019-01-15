@@ -1,5 +1,11 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"; // todo remove this theme import after applyinig scss
 
+@import "font-awesome";
+
 body {
   margin: 0;
-}/* You can add global styles to this file, and also import other style files */
+}
+
+main{
+  height: 100%;
+}

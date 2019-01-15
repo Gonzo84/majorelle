@@ -1,0 +1,36 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 50vw;
+}
+
+.mat-toolbar {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+  .navigation-logo-text{
+    color: #bb9a6a;
+  }
+}
+
+.is-active {
+  color: #bb9a6a;
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
