@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {KitchensComponent} from './kitchens/kitchens.component';
-import {BathroomsComponent} from './bathrooms/bathrooms.component';
-import {BedroomsComponent} from './bedrooms/bedrooms.component';
+import {HomeComponent} from './containers/home/home.component';
+import {KitchensComponent} from './containers/kitchens/kitchens.component';
+import {BathroomsComponent} from './containers/bathrooms/bathrooms.component';
+import {BedroomsComponent} from './containers/bedrooms/bedrooms.component';
 
 const routes: Routes = [{
   path: 'home',

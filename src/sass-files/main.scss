@@ -9,3 +9,18 @@ body {
 main{
   height: 100%;
 }
+
+.navigation_menu_left{
+  background-color: #211f1e;
+}
+.navigation_menu_right {
+  background-color: #292725;
+  .sidenav-img-container{
+    height: 100%;
+  }
+  img {
+    width: 40vw;
+    height: auto;
+    max-width: 40vw;
+  }
+}

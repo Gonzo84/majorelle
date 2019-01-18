@@ -8,14 +8,16 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { KitchensComponent } from './kitchens/kitchens.component';
-import { BathroomsComponent } from './bathrooms/bathrooms.component';
-import { BedroomsComponent } from './bedrooms/bedrooms.component';
+import { HomeComponent } from './containers/home/home.component';
+import { KitchensComponent } from './containers/kitchens/kitchens.component';
+import { BathroomsComponent } from './containers/bathrooms/bathrooms.component';
+import { BedroomsComponent } from './containers/bedrooms/bedrooms.component';
+import {AppFooterComponent} from './components/footer/footer';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AppFooterComponent,
     HomeComponent,
     KitchensComponent,
     BathroomsComponent,

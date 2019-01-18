@@ -1,11 +1,14 @@
 <mat-sidenav-container [hasBackdrop]="false">
-  <mat-sidenav #leftSideDrawer role="navigation">
+  <mat-sidenav #leftSideDrawer
+               role="navigation"
+               class="navigation_menu_left">
     <mat-nav-list>
       <div mat-list-item>
-        <button mat-icon-button (click)="toggleSideMenues()">
-          <mat-icon>clear</mat-icon>
-          CLOSE
-        </button>
+        <div
+          (click)="toggleSideMenues()">
+          <i class="fa fa-times"></i> CLOSE
+        </div>
+
       </div>
       <div mat-list-item>
         Menu
@@ -42,27 +45,29 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav position="end"
-               #rightSideDrawer>
-    <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'>
+               class="navigation_menu_right"
+               #rightSideDrawer
+  >
+    <div fxLayout="column"
+         fxLayoutAlign="center center"
+         class="sidenav-img-container">
+      <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'>
+    </div>
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar>
-      <div fxHide.gt-xs>
-          <i class="fa fa-bars"
-             (click)="toggleSideMenues()"></i> MENU
+    <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+      <div fxHide.gt-xs fxFlex="10">
+        <i class="fa fa-bars"
+           (click)="toggleSideMenues()"></i> MENU
       </div>
-      <div fxFlex
-           fxLayout
-           fxLayoutAlign="center"
-           fxHide.xs
-           fxFlex="80">
+      <div fxHide.xs>
         <span routerLink="/"
               class="navigation-logo-text">
           Majorelle & company
         </span>
       </div>
-      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs fxLayoutGap="5px">
+      <div fxHide.xs fxLayoutAlign="space-around  center" fxFlex="10">
         <a>
           <span class="fa fa-facebook"></span>
         </a>
@@ -78,5 +83,6 @@
       <router-outlet></router-outlet>
 
     </main>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
