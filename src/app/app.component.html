@@ -4,10 +4,10 @@
                class="navigation_menu_left">
     <mat-nav-list>
       <div mat-list-item>
-        <div
-          (click)="toggleSideMenues()">
-          <i class="fa fa-times"></i> CLOSE
-        </div>
+
+        <a (click)="toggleSideMenues()">
+          <mat-icon class="app-toolbar-icon">close</mat-icon>
+        </a>
 
       </div>
       <div mat-list-item>
@@ -46,20 +46,21 @@
   </mat-sidenav>
   <mat-sidenav position="end"
                class="navigation_menu_right"
-               #rightSideDrawer
-  >
+               #rightSideDrawer>
     <div fxLayout="column"
          fxLayoutAlign="center center"
          class="sidenav-img-container">
-      <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'>
+      <div class="sidenav-img-overlay">
+        <img mat-card-image src='assets/img/{{rightSideDrawerImgSrc}}.jpg'></div>
     </div>
 
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
       <div fxHide.gt-xs fxFlex="10">
-        <i class="fa fa-bars"
-           (click)="toggleSideMenues()"></i> MENU
+        <a (click)="toggleSideMenues()">
+          <mat-icon class="app-toolbar-icon">menu</mat-icon>
+        </a>
       </div>
       <div fxHide.xs>
         <span routerLink="/"
@@ -67,7 +68,10 @@
           Majorelle & company
         </span>
       </div>
-      <div fxHide.xs fxLayoutAlign="space-around  center" fxFlex="10">
+      <div fxHide.xs
+           fxLayoutAlign="space-around  center"
+           fxFlex="10"
+           class="app-toolbar-social-icons">
         <a>
           <span class="fa fa-facebook"></span>
         </a>

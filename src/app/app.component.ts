@@ -3,7 +3,7 @@ import {Component, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['../sass-files/components/side-bar/side-bar.scss']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   @ViewChild('leftSideDrawer') public leftSideDrawer: any;

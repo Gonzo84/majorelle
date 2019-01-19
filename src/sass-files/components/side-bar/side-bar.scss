@@ -1,7 +1,11 @@
+@import "../../variables";
+
+
 a {
   text-decoration: none;
-  color: white;
+  color: $mj-color-white-light;
 }
+
 mat-sidenav-container,
 mat-sidenav-content,
 mat-sidenav {
@@ -19,13 +23,6 @@ mat-sidenav {
   left: 0;
   z-index: 2;
   width: 100%  !important;
-  .navigation-logo-text{
-    color: #bb9a6a;
-  }
-}
-
-.is-active {
-  color: #bb9a6a;
 }
 
 .navigation-items {
@@ -33,4 +30,51 @@ mat-sidenav {
   padding: 0;
   margin: 0;
   cursor: pointer;
+}
+
+.navigation_menu_left{
+  background-color: $base-color;
+  a{
+    padding: 0 !important;
+    .label {
+      color: $mj-color-white-light;
+      font-family: $side-menu-font-family;
+      font-size: 24px;
+      letter-spacing: $mj-spacing-small;
+      text-transform: uppercase;
+      transition: all 600ms ease-in-out 0s;
+      &:hover{
+        color: $mj-gold-color;
+      }
+    }
+  }
+}
+.navigation_menu_right {
+  background-color: $secondary-color;
+  .sidenav-img-container{
+    height: 100%;
+  }
+  .sidenav-img-overlay {
+    display:block;
+    position:relative;
+  }
+  .sidenav-img-overlay:before {
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0 0 3rem 3rem $secondary-color;
+    -webkit-box-shadow:inset 0 0 3rem 3rem $secondary-color;
+    box-shadow:inset 0 0 3rem 3rem $secondary-color;
+  }
+  img {
+    width: 40vw;
+    height: auto;
+    max-width: 40vw;
+  }
+}
+
+.is-active .label {
+  color: $mj-gold-color !important;
 }
