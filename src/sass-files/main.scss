@@ -3,6 +3,7 @@
 @import "reset";
 @import "variables";
 @import "mixins";
+@import "animations";
 
 /// Importing all fonts
 @include add-fonts($font-family,
