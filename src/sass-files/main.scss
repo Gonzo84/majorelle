@@ -1,14 +1,38 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"; // todo remove this theme import after applyinig scss
 
-@import "font-awesome";
+@import "reset";
 @import "variables";
+@import "mixins";
 
-body {
-  margin: 0;
+/// Importing all fonts
+@include add-fonts($font-family,
+                   $font-family-light,
+                   $font-family-bold,
+                   $side-menu-font-family) {
+  @font-face {
+    font-family: $fancy-font-family;
+    font-weight: normal;
+    src: url('#{$font-url}#{$fancy-font-family}' + '.otf');
+  }
+  @font-face {
+    font-family: $fancy-font-family-light;
+    font-weight: normal;
+    src: url('#{$font-url}#{$fancy-font-family-light}' + '.otf');
+  }
+  @font-face {
+    font-family: $fancy-font-family-bold;
+    font-weight: normal;
+    src: url('#{$font-url}#{$fancy-font-family-light}' + '.otf');
+  }
+};
+
+/// Global styles
+html {
+  font-size: 62.5%;
 }
 
-main{
-  height: 100%;
+body {
+  font-size: 16px;
 }
 
 

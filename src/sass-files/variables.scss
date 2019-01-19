@@ -1,0 +1,32 @@
+$base-color: #211f1e !default;
+$base-light-color: #292725 !default;
+
+$mj-secondary-color: #bb9a6a !default;
+
+$mj-color-white-light: rgba(#fff, .8);
+$mj-color-white-lighter: rgba(#fff, .6);
+
+$mj-spacing: .8rem !default;
+$mj-spacing-small: .4rem !default;
+$mj-spacing-large: 1.6rem !default;
+
+$font-url: '../assets/fonts/';
+$img-url: '../assets/img/';
+
+$font-family: 'Lato-Regular'!default;
+$font-family-light: 'Lato-Light' !default;
+$font-family-bold: 'Lato-Bold' !default;
+
+$fancy-font-family: 'Butler-Regular' !default;
+$fancy-font-family-light: 'Butler-Light' !default;
+$fancy-font-family-bold: 'Butler-Bold' !default;
+
+$side-menu-font-family: 'Abel-Regular' !default;
+
+// break points
+$mj-breakpoint-sm: 576px !default;
+$mj-breakpoint-md: 768px !default;
+$mj-breakpoint-lg: 992px !default;
+$mj-breakpoint-xl: 1200px !default;
+$mj-breakpoint-xxl: 1440px !default;
+

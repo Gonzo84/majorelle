@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-kitchens',
   templateUrl: './kitchens.component.html',
-  styleUrls: ['../../../sass-files/pages/kitchens/kitchens.scss']
+  styleUrls: ['./kitchens.component.scss']
 })
 export class KitchensComponent implements OnInit {
 
