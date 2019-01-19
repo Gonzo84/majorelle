@@ -8,10 +8,12 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
-        opacity: 1
+        opacity: 1,
+        transform: 'translateY(0)'
       })),
       state('hide', style({
-        opacity: 0
+        opacity: 0,
+        transform: 'translateY(-50%)'
       })),
       transition('show => hide', animate('700ms ease-out')),
       transition('hide => show', animate('700ms ease-in'))
