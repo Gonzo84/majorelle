@@ -1,15 +1,8 @@
 @import "../../variables";
 
-
-a {
-  text-decoration: none;
-  color: $mj-color-white-light;
-}
-
 mat-sidenav-container,
 mat-sidenav-content,
 mat-sidenav {
-  height: 100vh;
   overflow-x: hidden;
 }
 
