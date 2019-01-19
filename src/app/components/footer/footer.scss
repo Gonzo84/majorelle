@@ -1,3 +1,15 @@
 .footer {
-  height: 4em;
+  min-height: 10em;
+  background-color: #242425;
+  width: 100%;
+  div{
+    width: 100%;
+    min-height: 4em;
+  }
+  .mj-arrow-up{
+    text-align: end;
+    mat-icon {
+      cursor: pointer;
+    }
+  }
 }
