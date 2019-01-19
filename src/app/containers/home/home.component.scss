@@ -16,6 +16,7 @@ $img-url: '../../../assets/img/';
     top: 0;
     width: 100%;
   }
+
   &::after {
     background: $mj-bottom-to-top-gradient;
     bottom: 0;
@@ -36,7 +37,6 @@ $img-url: '../../../assets/img/';
   .mj-video-overlay-dialog {
     color: #fff;
     left: 50%;
-    min-width: 500px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -61,9 +61,11 @@ $img-url: '../../../assets/img/';
       font-family: $font-family-light;
       font-size: 1.7rem;
       line-height: 2.4rem;
-      margin: 0 auto 1rem auto;
-      text-align: justify;
-      width: 55%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      max-width: 500px;
       word-spacing: .2rem;
     }
 
@@ -102,9 +104,51 @@ $img-url: '../../../assets/img/';
     width: 60%;
     z-index: 2;
   }
+
+  .mj-arrow-btn-holder {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+
+    mat-icon {
+      font-size: 8rem;
+      width: 8rem;
+      height: 8rem;
+      color: $mj-color-white-light;
+    }
+  }
 }
 
-.mj-background-white {
-  background-color: $mj-color-white-light;
-  min-height: 15vh;
+.mj-section {
+  padding: 5rem;
+
+  .mj-section-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .mj-section-title {
+    font-size: 3.8rem;
+    font-family: $fancy-font-family;
+    color: $mj-secondary-color;
+    margin-bottom: 2rem;
+  }
+
+  .mj-section-text {
+    line-height: 2.4rem;
+    color: #333;
+    word-spacing: .3rem;
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+  }
 }
