@@ -1,15 +1,104 @@
-.footer {
-  min-height: 10em;
-  background-color: #242425;
-  width: 100%;
-  div{
+@import "../../../sass-files/variables";
+
+$img-url: '../../../assets/img/';
+/// Styling footer
+.mj-footer {
+  padding: 6rem;
+  background-color: $base-color;
+  display: flex;
+  justify-content: center;
+
+  .mj-footer-card {
     width: 100%;
-    min-height: 4em;
-  }
-  .mj-arrow-up{
-    text-align: end;
-    mat-icon {
-      cursor: pointer;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 0;
+    color: #fff;
+
+    .mj-footer-card-title {
+      text-transform: uppercase;
+      color: #606060;
+      font-family: $font-family-bold;
+      letter-spacing: .2rem;
+      font-size: 1.8rem;
+      padding-bottom: 2rem;
     }
+
+    .mj-social-btn-holder {
+      margin: 0;
+      padding-top: 1rem;
+
+      span {
+        color: $mj-secondary-color;
+      }
+    }
+
+    .mj-footer-card-list {
+      width: 100%;
+      max-width: 60%;
+
+      .mj-footer-card-list-item {
+        line-height: 2rem;
+        font-size: 1.4rem;
+      }
+
+      .mj-separator {
+        width: 2rem;
+        margin: 1rem 0;
+        border-bottom: 2px solid #606060;
+      }
+    }
+  }
+}
+
+/// Styling copyright section
+.mj-copyright-section {
+  background-color: $base-color;
+  color: #606060;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .mj-section-holder {
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin-bottom: 4rem;
+  }
+
+  .mj-copyright {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    font-size: 1.4rem;
+  }
+
+  .mj-logo {
+    background-image: url("#{$img-url}temporarry-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 33%;
+    opacity: .065;
+    height: 120px;
+  }
+}
+
+/// Styling slide to top btn
+.mj-arrow-up {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem;
+  background-color: #2a343ad9;
+
+  mat-icon {
+    color: #fff;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
   }
 }

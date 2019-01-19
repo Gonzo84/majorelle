@@ -1,44 +1,53 @@
-<section class="footer"
-         fxLayout="column"
-         fxLayoutAlign="space-around center">
-  <div fxLayout="row"
-       fxLayoutAlign="space-around center">
-    <div>FOLLOW
-      <div>
-        <a>
-          <span class="fa fa-facebook"></span>
-        </a>
-        <a>
-          <span class="fa fa-instagram"></span>
-        </a>
-        <a>
-          <span class="fa fa-youtube"></span>
-        </a>
-      </div>
-    </div>
-    <div>LOCATION
-      <div>Alexander Murray & Co.
-        Scotch Whisky Merchants & Exporters
-      </div>
-      <div>23237 Blue Bird Drive
-        Calabasas, CA 91302
-      </div>
-    </div>
-    <div>CONTACT
-      <div>
-        747.888.3835
-        info@alexandermurray.com
-      </div>
+<section class="mj-footer">
+  <div class="mj-footer-card">
+    <h1 class="mj-footer-card-title">Follow</h1>
+    <div class="mj-social-btn-holder">
+      <a>
+        <span class="fa fa-facebook"></span>
+      </a>
+      <a>
+        <span class="fa fa-instagram"></span>
+      </a>
+      <a>
+        <span class="fa fa-youtube"></span>
+      </a>
     </div>
   </div>
-  <div fxLayout="row"
-       fxLayoutAlign="space-between center" >
-    <div>© Copyright of Alexander Murray & Co 2019 Design & Development Form Digital</div>
-    <div class="mj-arrow-up">
-      <mat-icon  mat-button
-                 [ngx-scroll-to]="'test'">
-        keyboard_arrow_up
-      </mat-icon>
-    </div>
+  <div class="mj-footer-card">
+    <h1 class="mj-footer-card-title">Location</h1>
+    <ul class="mj-footer-card-list">
+      <li class="mj-footer-card-list-item">
+        Alexander Murray & Co. Scotch Whisky Merchants & Exporters
+      </li>
+      <li class="mj-separator"></li>
+      <li class="mj-footer-card-list-item">
+        23237 Blue Bird Drive Calabasas, CA 91302m
+      </li>
+    </ul>
+  </div>
+  <div class="mj-footer-card">
+    <h1 class="mj-footer-card-title">Contact</h1>
+    <ul class="mj-footer-card-list">
+      <li class="mj-footer-card-list-item">
+        747.888.3835
+      </li>
+      <li class="mj-footer-card-list-item">
+        info@alexandermurray.com
+      </li>
+    </ul>
   </div>
 </section>
+<section class="mj-copyright-section">
+  <div class="mj-section-holder">
+    <div class="mj-copyright">
+      © Copyright of Alexander Murray & Co 2019 Design & Development Form Digital
+    </div>
+    <div class="mj-logo"></div>
+  </div>
+</section>
+<div class="mj-arrow-up">
+  <mat-icon  mat-button
+             [ngx-scroll-to]="'test'">
+    keyboard_arrow_up
+  </mat-icon>
+</div>
