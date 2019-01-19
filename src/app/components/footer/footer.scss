@@ -89,11 +89,12 @@ $img-url: '../../../assets/img/';
 
 /// Styling slide to top btn
 .mj-arrow-up {
-  position: fixed;
+  position: absolute;
   right: 2rem;
   bottom: 2rem;
   padding: 1rem;
   background-color: #2a343ad9;
+  cursor: pointer;
 
   mat-icon {
     color: #fff;
