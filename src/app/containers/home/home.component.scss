@@ -1,13 +1,68 @@
 @import "../../../sass-files/variables";
+$img-url : '../../../assets/img/';
 
 .mj-video-holder {
   height: 100vh;
   overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(180deg,
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0) 100%);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(0deg,
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0) 100%);
+  }
+
 
   .mj-video {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
+  }
+
+  .mj-video-overlay-dialog {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    z-index: 1;
+    color : #fff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1,
+    span {
+      color: $mj-secondary-color;
+    }
+  }
+
+  .mj-overlay-logo {
+    background-image: url("#{$img-url}temporarry-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    opacity: .5;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 .mj-background-white{

@@ -3,15 +3,15 @@ $base-light-color: #292725 !default;
 
 $mj-secondary-color: #bb9a6a !default;
 
-$mj-color-white-light: rgba(#fff, .8);
-$mj-color-white-lighter: rgba(#fff, .6);
+$mj-color-white-light: rgba(#fff, .8) !default;
+$mj-color-white-lighter: rgba(#fff, .6) !default;
 
 $mj-spacing: .8rem !default;
 $mj-spacing-small: .4rem !default;
 $mj-spacing-large: 1.6rem !default;
 
-$font-url: '../assets/fonts/';
-$img-url: '../assets/img/';
+$font-url: '../assets/fonts/' !default;
+$img-url: '../assets/img/' !default;
 
 $font-family: 'Lato-Regular'!default;
 $font-family-light: 'Lato-Light' !default;
