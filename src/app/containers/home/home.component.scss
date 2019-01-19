@@ -1,5 +1,6 @@
 @import "../../../sass-files/variables";
-$img-url : '../../../assets/img/';
+
+$img-url: '../../../assets/img/';
 
 .mj-video-holder {
   height: 100vh;
@@ -7,48 +8,83 @@ $img-url : '../../../assets/img/';
   position: relative;
 
   &::before {
+    background: $mj-top-to-bottom-gradient;
     content: '';
+    height: 50%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    height: 50%;
     width: 100%;
-    background: linear-gradient(180deg,
-                rgba(0,0,0,1) 0%,
-                rgba(0,0,0,0) 100%);
   }
   &::after {
-    content: '';
-    position: absolute;
+    background: $mj-bottom-to-top-gradient;
     bottom: 0;
-    left: 0;
+    content: '';
     height: 50%;
+    left: 0;
+    position: absolute;
     width: 100%;
-    background: linear-gradient(0deg,
-                rgba(0,0,0,1) 0%,
-                rgba(0,0,0,0) 100%);
   }
-
 
   .mj-video {
     height: 100%;
     width: 100%;
-    object-fit: cover;
     z-index: -1;
+    object-fit: cover;
   }
 
   .mj-video-overlay-dialog {
-    position: absolute;
-    width: 500px;
-    top: 50%;
-    z-index: 1;
-    color : #fff;
+    color: #fff;
     left: 50%;
+    min-width: 500px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 
-    h1,
-    span {
+    .mj-dialog-title {
       color: $mj-secondary-color;
+      font-family: $fancy-font-family;
+      font-size: 5.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .mj-dialog-subtitle {
+      font-family: $side-menu-font-family;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .mj-dialog-text {
+      font-family: $font-family-light;
+      font-size: 1.7rem;
+      line-height: 2.4rem;
+      margin: 0 auto 1rem auto;
+      text-align: justify;
+      width: 55%;
+      word-spacing: .2rem;
+    }
+
+    .mj-dialog-btn {
+      align-items: center;
+      color: $mj-secondary-color;
+      cursor: pointer;
+      display: flex;
+      font-family: $side-menu-font-family;
+      font-size: 2.1rem;
+      justify-content: center;
+
+      .fa {
+        font-size: 4rem;
+      }
+
+      .mj-dialog-btn-text {
+        line-height: 3rem;
+        margin-left: 1rem;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -56,16 +92,19 @@ $img-url : '../../../assets/img/';
     background-image: url("#{$img-url}temporarry-logo.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    opacity: .5;
-    height: 50%;
-    position: absolute;
+    background-size: contain;
     bottom: 0;
+    height: 60%;
+    opacity: .065;
+    pointer-events: none;
+    position: absolute;
     right: 0;
+    width: 60%;
+    z-index: 2;
   }
 }
-.mj-background-white{
+
+.mj-background-white {
   background-color: $mj-color-white-light;
   min-height: 15vh;
 }

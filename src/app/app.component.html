@@ -10,7 +10,8 @@
         </a>
 
       </div>
-      <div mat-list-item>
+      <div mat-list-item
+           class="mj-side-nav-title">
         Menu
       </div>
       <a mat-list-item
@@ -56,10 +57,14 @@
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
-      <div fxHide.gt-xs fxFlex="10">
-        <a (click)="toggleSideMenues()">
-          <mat-icon class="app-toolbar-icon">menu</mat-icon>
+    <mat-toolbar fxLayout="row"
+                 fxLayoutAlign="space-between center">
+      <div fxHide.gt-xs
+           fxFlex="10">
+        <a (click)="toggleSideMenues()"
+            class="mj-ham-btn">
+          <mat-icon class="mj-ham-btn-icon">menu</mat-icon>
+          <span class="mj-ham-btn-text">Menu</span>
         </a>
       </div>
       <div fxHide.xs>

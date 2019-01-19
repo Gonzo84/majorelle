@@ -33,7 +33,9 @@ html {
 
 body {
   font-size: 16px;
+  font-family: $font-family, sans-serif;
 }
+
 .mj-simple-style-cont{
   width: 100%;
   padding: 3.4rem 0;
@@ -48,6 +50,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 @media only screen and  (min-width: $mj-breakpoint-xl){
   .container {
     max-width: 1140px;
@@ -72,6 +75,22 @@ body {
 a {
   text-decoration: none;
   color: $mj-color-white-light;
+}
+
+.mj-ham-btn {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  .mj-ham-btn-icon {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .mj-ham-btn-text {
+    margin-left: 1rem;
+  }
 }
 
 
