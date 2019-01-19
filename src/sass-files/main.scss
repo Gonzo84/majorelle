@@ -51,7 +51,6 @@ a {
   color: #fff;
   cursor: pointer;
   margin-left: 4rem;
-  position: absolute;
   opacity: .5;
   transition: opacity .5s ease;
 
@@ -70,6 +69,28 @@ a {
     margin-left: 1rem;
     font-size: 1.8rem;
     letter-spacing: .2rem;
+  }
+}
+
+/// Stying social buttons
+.mj-social-btn-holder {
+  margin-right: 4rem;
+
+  a {
+    opacity: .5;
+    margin: 0 .5rem;
+    cursor: pointer;
+    transition: opacity .5s ease;
+
+    span {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 2.5rem;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

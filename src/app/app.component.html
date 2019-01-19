@@ -58,7 +58,7 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar fxLayout="row"
-                 fxLayoutAlign="space-between center">
+                 fxLayoutAlign="space-between flex-end">
       <div fxHide.gt-xs
            fxFlex="10">
         <a (click)="toggleSideMenues()"
@@ -67,16 +67,14 @@
           <span class="mj-ham-btn-text">Menu</span>
         </a>
       </div>
-      <div fxHide.xs>
+      <div fxHide.xs
+          fxFlexAlign="center">
         <span routerLink="/"
               class="navigation-logo-text">
           Majorelle & company
         </span>
       </div>
-      <div fxHide.xs
-           fxLayoutAlign="space-around  center"
-           fxFlex="10"
-           class="app-toolbar-social-icons">
+      <div class="mj-social-btn-holder">
         <a>
           <span class="fa fa-facebook"></span>
         </a>
