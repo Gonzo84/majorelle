@@ -24,12 +24,12 @@
     </div>
     <div class="mj-overlay-logo"></div>
     <div class="mj-arrow-btn-holder">
-        <mat-icon [ngx-scroll-to]="whiteContainer">keyboard_arrow_down</mat-icon>
+        <mat-icon [ngx-scroll-to]="'white_cont'">keyboard_arrow_down</mat-icon>
     </div>
   </div>
 </header>
-<section class="mj-section" #whiteContainer>
-  <div class="mj-section-holder" [@scrollAnimation]="state">
+<section class="mj-section" #whiteContainer >
+  <div class="mj-section-holder" [@scrollAnimation]="state" id="white_cont">
     <h2 class="mj-section-title">
       Independence & Trust
     </h2>
