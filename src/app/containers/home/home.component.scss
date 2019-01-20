@@ -1,4 +1,6 @@
 @import "../../../sass-files/variables";
+@import "../../../sass-files/functions";
+@import "../../../sass-files/mixins";
 
 $img-url: '../../../assets/img/';
 
@@ -127,6 +129,14 @@ $img-url: '../../../assets/img/';
 
 .mj-section {
   padding: 5rem;
+  
+  @include responsive(lg) {
+    padding: 3.5rem;
+  }
+  
+  @include responsive(md) {
+    padding: 2rem;
+  }
 
   .mj-section-holder {
     display: flex;
@@ -137,6 +147,14 @@ $img-url: '../../../assets/img/';
     padding: 5rem;
     max-width: 60%;
     margin: 0 auto;
+  
+    @include responsive(lg) {
+      max-width: 80%;
+    }
+  
+    @include responsive(md) {
+      max-width: 100%;
+    }
   }
 
   .mj-section-title {
