@@ -51,10 +51,11 @@ $mj-bottom-to-top-gradient: linear-gradient(0deg,
   rgba(0, 0, 0, .3) 85%,
   rgba(0, 0, 0, 0) 100%);
 
-// break points
-$mj-breakpoint-sm: 576px !default;
-$mj-breakpoint-md: 768px !default;
-$mj-breakpoint-lg: 992px !default;
-$mj-breakpoint-xl: 1200px !default;
-$mj-breakpoint-xxl: 1440px !default;
+/// Breakpoint map
+$breakpoint-map : (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xlg': 1200px
+);
 
