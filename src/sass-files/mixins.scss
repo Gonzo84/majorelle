@@ -23,23 +23,31 @@
 /// Mixin to reduce repetition of same code for media queries
 /// @author Stevan Stojanovic
 /// @params {String} $key quoted or unquoted value, if you need some custom breakpoint not defined in $map
-///         you should input only the number of px you want without unit and unquoted in order to achive desired code
+///         you should input the number with unit but unquoted in order to achive desired code
 @mixin responsive($key, $map: $breakpoint-map) {
   
   @if map-has-key($map, $key) {
     $key-value: map-get($map, $key);
     
-    @media only screen and (min-width: $key-value) {
+    @media only screen and (max-width: $key-value) {
       @content;
     }
   }
   @else if (is-number($key)) {
-    @media only screen and (min-width: $key + 'px') {
+    @media only screen and (max-width: $key) {
       @content;
     }
   }
   @else {
     @warn "Either you didn't provide valid key from break point map" +
           "or you didn't provide a valid type of custom break-point";
+  }
+}
+
+/// Mixin to reduce repetition of same code for media queries
+/// @author Stevan Stojanovic
+@mixin responsive-between($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
   }
 }
