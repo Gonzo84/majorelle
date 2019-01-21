@@ -47,33 +47,36 @@ a {
 
 /// Styling hamburger btn in header
 .mj-ham-btn {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  cursor: pointer;
   margin-left: 4rem;
-  opacity: .5;
-  transition: opacity .5s ease;
-  
+
   @include responsive(md) {
     margin-left: 0;
   }
 
-  &:hover {
-    opacity: 1;
-  }
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .5s ease;
 
-  .mj-ham-btn-icon {
-    font-size: 4rem;
-    width: 4rem;
-    height: 4rem;
-  }
+    &:hover {
+      opacity: 1;
+    }
 
-  .mj-ham-btn-text {
-    text-transform: uppercase;
-    margin-left: 1rem;
-    font-size: 1.8rem;
-    letter-spacing: .2rem;
+    .mj-ham-btn-icon {
+      font-size: 4rem;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    .mj-ham-btn-text {
+      text-transform: uppercase;
+      margin-left: 1rem;
+      font-size: 1.8rem;
+      letter-spacing: .2rem;
+    }
   }
 }
 

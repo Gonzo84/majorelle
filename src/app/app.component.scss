@@ -1,18 +1,142 @@
 @import "../sass-files/variables";
 @import "../sass-files/functions";
 @import "../sass-files/mixins";
-@import "../sass-files/components/side-bar/side-bar";
 
-.mj-logo-text {
-  color: $mj-secondary-color;
-  font-family: $fancy-font-family;
-  font-size: 4rem;
-  
-  @include responsive(md) {
-    font-size: 3rem;
+/// Styling side nav
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  overflow: hidden;
+}
+
+mat-sidenav {
+  width: 50vw;
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.navigation_menu_left {
+  background-color: $base-color;
+
+  a {
+    padding: 0 !important;
+
+    .label {
+      color: $mj-color-white-light;
+      font-family: $side-menu-font-family;
+      font-size: 24px;
+      letter-spacing: $mj-spacing-small;
+      text-transform: uppercase;
+      transition: all 600ms ease-in-out 0s;
+
+      &:hover {
+        color: $mj-secondary-color;
+      }
+    }
   }
-  
-  @include responsive(sm) {
-    font-size: 2rem;
+}
+
+.navigation_menu_right {
+  background-color: $base-light-color;
+
+  .sidenav-img-container{
+    height: 100%;
+  }
+
+  .sidenav-img-overlay {
+    display:block;
+    position:relative;
+  }
+
+  .sidenav-img-overlay:before {
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0 0 3rem 3rem $base-light-color;
+    -webkit-box-shadow:inset 0 0 3rem 3rem $base-light-color;
+    box-shadow:inset 0 0 3rem 3rem $base-light-color;
+  }
+
+  img {
+    width: 40vw;
+    height: auto;
+    max-width: 40vw;
+  }
+}
+
+.is-active .label {
+  color: $mj-secondary-color !important;
+}
+
+/// Styling toolbar header
+.mj-header-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%  !important;
+
+  @include responsive(md) {
+    flex-direction: row-reverse;
+  }
+
+  .mj-ham-btn-text {
+
+    @include responsive(md) {
+      display: none;
+    }
+  }
+
+  .mj-logo-text {
+    transition: all .3s ease;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+    @include responsive(md) {
+      padding-top: 4rem;
+      position: absolute;
+      width: calc(100% - 3.2rem);
+      pointer-events: none;
+      align-self: center;
+    }
+
+    span {
+      color: $mj-secondary-color;
+      font-family: $fancy-font-family;
+      font-size: 4rem;
+      display: flex;
+      justify-content: center;
+      transition: all .3s ease;
+
+      @include responsive(md) {
+        max-width: 30%;
+        font-size: 3rem;
+        white-space: normal;
+        text-align: center;
+      }
+
+      @include responsive(sm) {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .mj-social-btn-holder {
+
+    @include responsive(md) {
+      display: none;
+    }
   }
 }
