@@ -1,7 +1,7 @@
-@import "../../../sass-files/variables";
-@import "../../../sass-files/functions";
-@import "../../../sass-files/mixins";
+/// Importing sass for component
+@import "../../../sass-files/component-assests";
 
+/// Changing path of images to match path from component
 $img-url: '../../../assets/img/';
 
 .mj-video-holder {
@@ -129,11 +129,11 @@ $img-url: '../../../assets/img/';
 
 .mj-section {
   padding: 5rem;
-  
+
   @include responsive(lg) {
     padding: 3.5rem;
   }
-  
+
   @include responsive(md) {
     padding: 2rem;
   }
@@ -147,11 +147,11 @@ $img-url: '../../../assets/img/';
     padding: 5rem;
     max-width: 60%;
     margin: 0 auto;
-  
+
     @include responsive(lg) {
       max-width: 80%;
     }
-  
+
     @include responsive(md) {
       max-width: 100%;
     }
