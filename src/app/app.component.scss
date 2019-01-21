@@ -1,15 +1,18 @@
 @import "../sass-files/variables";
+@import "../sass-files/functions";
+@import "../sass-files/mixins";
 @import "../sass-files/components/side-bar/side-bar";
 
-.app-toolbar-social-icons {
-
-  span {
-    cursor: pointer;
-  }
-}
-
-.navigation-logo-text{
+.mj-logo-text {
   color: $mj-secondary-color;
   font-family: $fancy-font-family;
-  font-size: xx-large;
+  font-size: 4rem;
+  
+  @include responsive(md) {
+    font-size: 3rem;
+  }
+  
+  @include responsive(sm) {
+    font-size: 2rem;
+  }
 }

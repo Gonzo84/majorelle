@@ -4,11 +4,9 @@
                class="navigation_menu_left">
     <mat-nav-list>
       <div mat-list-item>
-
         <a (click)="toggleSideMenues()">
           <mat-icon class="app-toolbar-icon">close</mat-icon>
         </a>
-
       </div>
       <div mat-list-item
            class="mj-side-nav-title">
@@ -59,8 +57,7 @@
   <mat-sidenav-content>
     <mat-toolbar fxLayout="row"
                  fxLayoutAlign="space-between flex-end">
-      <div fxHide.gt-xs
-           fxFlex="10">
+      <div fxHide.gt-xs>
         <a (click)="toggleSideMenues()"
             class="mj-ham-btn">
           <mat-icon class="mj-ham-btn-icon">menu</mat-icon>
@@ -70,7 +67,7 @@
       <div fxHide.xs
           fxFlexAlign="center">
         <span routerLink="/"
-              class="navigation-logo-text">
+              class="mj-logo-text">
           Majorelle & company
         </span>
       </div>
@@ -88,7 +85,6 @@
     </mat-toolbar>
     <main id="main_cont">
       <router-outlet></router-outlet>
-
     </main>
     <app-footer></app-footer>
   </mat-sidenav-content>

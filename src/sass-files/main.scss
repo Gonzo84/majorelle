@@ -54,6 +54,10 @@ a {
   margin-left: 4rem;
   opacity: .5;
   transition: opacity .5s ease;
+  
+  @include responsive(md) {
+    margin-left: 0;
+  }
 
   &:hover {
     opacity: 1;
