@@ -105,13 +105,13 @@ $img-url: '../../../assets/img/';
   }
 
   .mj-overlay-logo {
-    background-image: url("#{$img-url}temporarry-logo.svg");
+    background-image: url("#{$img-url}logo_majorelle.png");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 0;
     height: 60%;
-    opacity: .065;
+    opacity: .5;
     pointer-events: none;
     position: absolute;
     right: 0;
@@ -159,25 +159,26 @@ $img-url: '../../../assets/img/';
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    padding: 5rem;
-    max-width: 60%;
+    text-align: center;;
     margin: 0 auto;
+    min-height: 50rem;
 
-    @include responsive(lg) {
-      max-width: 80%;
+    @include responsive(xlg) {
+      min-height: 30rem;
     }
+  }
 
-    @include responsive(md) {
-      max-width: 100%;
-    }
+  .mj-section-div {
+    padding: 2rem 1rem;
+    text-align: justify;
   }
 
   .mj-section-title {
     font-size: 3.8rem;
     font-family: $fancy-font-family;
     color: $mj-secondary-color;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
   .mj-section-text {
@@ -186,5 +187,34 @@ $img-url: '../../../assets/img/';
     word-spacing: .3rem;
     font-family: $font-family-light;
     font-size: 1.6rem;
+  }
+}
+
+.mj-grid-layout {
+  background-color: $base-color;
+  padding: 0;
+  text-align: justify;
+
+  .mj-section-div {
+    padding: 0;
+
+    div {
+      height: 100%;
+    }
+  }
+
+  .mj-red-kitchen {
+    background-image: url("#{$img-url}crvena_kuhinja.png");
+    background-size: cover;
+
+  }
+
+  .mj-on-hover {
+    opacity: .5;
+    transition: opacity .7s ease;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

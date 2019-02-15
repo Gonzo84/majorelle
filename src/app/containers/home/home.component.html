@@ -12,7 +12,8 @@
     <div class="mj-video-overlay-dialog">
       <h1 class="mj-dialog-title">Majorelle & Company</h1>
       <h3 class="mj-dialog-subtitle">Lorem ipsum dolornsectet sadas </h3>
-      <p class="mj-dialog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum ut nulla id dictum. Cras vitae ex eget nunc
+      <p class="mj-dialog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum ut nulla id dictum.
+        Cras vitae ex eget nunc
         ornare tempus.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum ut nulla id dictum. Cras vitae ex eget nunc
         ornare tempus.
@@ -24,18 +25,38 @@
     </div>
     <div class="mj-overlay-logo"></div>
     <div class="mj-arrow-btn-holder">
-        <mat-icon [ngx-scroll-to]="'white_cont'">keyboard_arrow_down</mat-icon>
+      <mat-icon [ngx-scroll-to]="'white_cont'">keyboard_arrow_down</mat-icon>
     </div>
   </div>
 </header>
-<section class="mj-section" #whiteContainer >
+<section class="mj-section" #whiteContainer>
   <div class="mj-section-holder" [@scrollAnimation]="state" id="white_cont">
-    <h2 class="mj-section-title">
-      Independence & Trust
-    </h2>
-      <p class="mj-section-text">We delight in our independence, which gives us the freedom to create whisky according to our principles and beliefs.</p>
-      <p class="mj-section-text">As a Merchant & Independent Bottler, our trade is in other parties’ production efforts, which means we must have unwavering trust in our process.</p>
-      <p class="mj-section-text">To bottle a whisky under the Alexander Murray name is a very serious promise of quality.</p>
-      <p class="mj-section-text">You will find these principles in every bottle.</p>
+    <div class="container">
+      <div fxLayout="row" fxLayoutAlign="space-between stretch" fxLayout.xs="column">
+        <div fxFlex="50" class="mj-section-div">
+          <img src="assets/img/crvena_kuhinja.png" alt="">
+        </div>
+        <div fxFlex="50" class="mj-section-div">
+          <h3 class="mj-section-title">O Nama</h3>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum non mauris at
+          sollicitudin. Donec commodo arcu posuere, ultrices risus vitae, dignissim felis. Sed sollicitudin vestibulum
+          efficitur. Etiam sed purus sit amet turpis mollis tempor. Nullam pulvinar leo at turpis volutpat rutrum.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mj-section mj-grid-layout">
+  <div class="mj-section-holder" fxLayout="row" fxLayoutAlign="stretch" fxLayout.xs="column">
+    <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover">
+    </div>
+    <div fxFlex="50" class="mj-section-div">
+      <div fxLayout="column" fxLayoutAlign="stretch">
+        <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover">
+        </div>
+        <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover">
+        </div>
+      </div>
+    </div>
   </div>
 </section>

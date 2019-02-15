@@ -128,12 +128,11 @@ $img-url: '../../../assets/img/';
   }
 
   .mj-logo {
-    background-image: url("#{$img-url}temporarry-logo.svg");
+    background-image: url("#{$img-url}logo_majorelle.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    width: 33%;
-    opacity: .065;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
     height: 120px;
   
     @include responsive(md) {
