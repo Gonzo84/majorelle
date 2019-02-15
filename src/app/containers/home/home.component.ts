@@ -22,18 +22,16 @@ export class HomeComponent {
   @ViewChild('whiteContainer') whiteContainer: ElementRef;
   state = 'hide';
 
-  constructor() {
-  }
-
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     const viewHeight = window.innerHeight;
     const scrollPosition = window.pageYOffset;
     const whiteContainerPosition = this.whiteContainer.nativeElement.offsetTop;
+    const whiteContainerHeight = this.whiteContainer.nativeElement.clientHeight;
     const heightSum = viewHeight + scrollPosition;
 
-    if (heightSum > whiteContainerPosition && scrollPosition < viewHeight) {
+    if (heightSum > whiteContainerPosition && scrollPosition < (whiteContainerPosition + whiteContainerHeight)) {
       this.state = 'show';
     } else {
       this.state = 'hide';
