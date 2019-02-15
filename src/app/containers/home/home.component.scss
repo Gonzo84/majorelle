@@ -224,12 +224,18 @@ $img-url: '../../../assets/img/';
         padding: 0 3rem;
       }
       .mj-section-footer-arrow{
+        font-size: 3rem;
         color: $mj-secondary-color;
-        opacity: .5;
         cursor: pointer;
-        transition: opacity .5s ease;
+        -webkit-transition: -moz-transform .1s ease-out;
+        -moz-transition: -webkit-transform .1s ease-out;
+        -o-transition: -o-transform .1s ease-out;
+        transition: transform .1s ease-out;
         &:hover {
-          opacity: 1;
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
         }
       }
     }
