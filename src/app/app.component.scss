@@ -1,6 +1,4 @@
-@import "../sass-files/variables";
-@import "../sass-files/functions";
-@import "../sass-files/mixins";
+@import "../sass-files/component-assests";
 
 /// Styling side nav
 mat-sidenav-container,
@@ -9,59 +7,102 @@ mat-sidenav {
   overflow: hidden;
 }
 
-mat-sidenav {
-  width: 50vw;
+// fixin height when side menu is  opened
+mat-sidenav-container {
+  &.mat-drawer-opened {
+    max-height: 100vh;
+  }
 }
 
-.navigation-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
+.navigation_menu_left,
+.navigation_menu_right {
+  width: 50vw;
 }
 
 .navigation_menu_left {
   background-color: $base-color;
+  padding: 20px 0 0 56px;
 
-  a {
-    padding: 0 !important;
+  .mj-side-nav-close-btn {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    color: #fff;
+    opacity: .5;
+    transition: opacity .3s ease;
 
-    .label {
-      color: $mj-color-white-light;
-      font-family: $side-menu-font-family;
-      font-size: 24px;
-      letter-spacing: $mj-spacing-small;
-      text-transform: uppercase;
-      transition: all 600ms ease-in-out 0s;
+    mat-icon {
+      font-size: 4rem;
+      width: 4rem;
+      height: 4rem;
+    }
 
-      &:hover {
-        color: $mj-secondary-color;
-      }
+    &:hover {
+      opacity: 1;
     }
   }
+
+  .mj-side-nav-list-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .mj-side-nav-title {
+    font-size: 3.2rem;
+    font-family: $fancy-font-family;
+    color: #494644;
+    position: relative;
+    padding-bottom: 3rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #494644;
+      width: 4rem;
+      height: 2px;
+    }
+  }
+
+  .label {
+    color: $mj-color-white-light;
+    font-family: $side-menu-font-family;
+    font-size: 24px;
+    letter-spacing: $mj-spacing-small;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: $mj-secondary-color;
+    }
+  }
+
 }
 
 .navigation_menu_right {
   background-color: $base-light-color;
 
-  .sidenav-img-container{
+  .sidenav-img-container {
     height: 100%;
   }
 
   .sidenav-img-overlay {
-    display:block;
-    position:relative;
+    display: block;
+    position: relative;
   }
 
   .sidenav-img-overlay:before {
-    display:block;
-    content:'';
-    position:absolute;
-    width:100%;
-    height:100%;
-    -moz-box-shadow:inset 0 0 3rem 3rem $base-light-color;
-    -webkit-box-shadow:inset 0 0 3rem 3rem $base-light-color;
-    box-shadow:inset 0 0 3rem 3rem $base-light-color;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-box-shadow: inset 0 0 3rem 3rem $base-light-color;
+    -webkit-box-shadow: inset 0 0 3rem 3rem $base-light-color;
+    box-shadow: inset 0 0 3rem 3rem $base-light-color;
   }
 
   img {
@@ -85,7 +126,7 @@ mat-sidenav {
   top: 0;
   left: 0;
   z-index: 2;
-  width: 100%  !important;
+  width: 100% !important;
 
   @include responsive(md) {
     flex-direction: row-reverse;

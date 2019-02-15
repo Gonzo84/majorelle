@@ -1,6 +1,4 @@
-@import "../../../sass-files/variables";
-@import "../../../sass-files/functions";
-@import "../../../sass-files/mixins";
+@import "../../../sass-files/component-assests";
 
 $img-url: '../../../assets/img/';
 /// Styling footer
@@ -9,7 +7,7 @@ $img-url: '../../../assets/img/';
   background-color: $base-color;
   display: flex;
   justify-content: center;
-  
+
   @include responsive(md) {
     padding: 3rem 1rem 1rem;
     flex-direction: column;
@@ -24,7 +22,7 @@ $img-url: '../../../assets/img/';
     align-items: flex-start;
     padding: 3rem 0;
     color: #fff;
-    
+
     @include responsive(md) {
       padding: 1rem 1rem 5rem;
       align-items: center;
@@ -41,7 +39,7 @@ $img-url: '../../../assets/img/';
       padding-bottom: 2rem;
       max-width: 60%;
       width: 100%;
-  
+
       @include responsive(md) {
         max-width: 100%;
       }
@@ -52,7 +50,7 @@ $img-url: '../../../assets/img/';
       padding-top: 1rem;
       width: 100%;
       max-width: 60%;
-      
+
       @include responsive(md) {
         max-width: 100%;
       }
@@ -67,7 +65,7 @@ $img-url: '../../../assets/img/';
       max-width: 60%;
       display: flex;
       flex-direction: column;
-      
+
       @include responsive(md) {
         max-width: 100%;
         align-items: center;
@@ -76,7 +74,7 @@ $img-url: '../../../assets/img/';
       .mj-footer-card-list-item {
         line-height: 2rem;
         font-size: 1.4rem;
-        
+
         @include responsive(md) {
           max-width: 35%;
         }
@@ -105,7 +103,7 @@ $img-url: '../../../assets/img/';
     max-width: 1200px;
     margin-bottom: 4rem;
     padding: 0 2rem;
-    
+
     @include responsive(md) {
       flex-direction: column;
       align-items: center;
@@ -118,7 +116,7 @@ $img-url: '../../../assets/img/';
     flex: 1;
     line-height: 1.7rem;
     font-size: 1.4rem;
-    
+
     @include responsive(md) {
       order: 1;
       text-align: center;
@@ -134,7 +132,7 @@ $img-url: '../../../assets/img/';
     background-position: center;
     width: 50%;
     height: 120px;
-  
+
     @include responsive(md) {
       order: 0;
       width: 100%;
@@ -152,7 +150,7 @@ $img-url: '../../../assets/img/';
   padding: 1rem;
   background-color: #2a343ad9;
   cursor: pointer;
-  
+
   @include responsive(md) {
     bottom: 8rem;
   }

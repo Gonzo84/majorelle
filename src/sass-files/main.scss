@@ -106,30 +106,25 @@ a {
   width: 100%;
   max-width: 1440px;
   height: auto;
+
   img {
     max-width: 100%;
     height: auto;
   }
 }
-//
-//@media only screen and  (min-width: $mj-breakpoint-xl){
-//  .container {
-//    max-width: 1140px;
-//  }
-//}
-//@media only screen and (min-width: $mj-breakpoint-lg){
-//  .container {
-//    max-width: 960px;
-//  }
-//}
-//@media only screen and (min-width: $mj-breakpoint-md){
-//  .container {
-//    max-width: 720px;
-//  }
-//}
-//@media only screen and (min-width: $mj-breakpoint-sm){
-//  .container {
-//    max-width: 540px;
-//  }
-//}
-//
+
+/// this must be overrideen in main since its third party library
+.mj-side-nav {
+
+  .mat-drawer-inner-container {
+    overflow: hidden!important;
+  }
+
+  .mat-nav-list {
+    padding-top: 3rem!important;
+  }
+
+  .mat-list-item-content {
+    padding: 0 !important;
+  }
+}
