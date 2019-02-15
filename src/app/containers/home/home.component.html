@@ -30,14 +30,21 @@
   </div>
 </header>
 <section class="mj-section" #whiteContainer>
-  <div class="mj-section-holder" [@scrollAnimation]="state" id="white_cont">
+  <div class="mj-section-holder"
+       [@scrollAnimation]="state"
+       id="white_cont">
     <div class="container">
-      <div fxLayout="row" fxLayoutAlign="space-between stretch" fxLayout.xs="column">
-        <div fxFlex="50" class="mj-section-div">
-          <img src="assets/img/crvena_kuhinja.png" alt="">
+      <div fxLayout="row"
+           fxLayoutAlign="space-between stretch"
+           fxLayout.xs="column">
+        <div fxFlex="50"
+             class="mj-section-div">
+          <img src="assets/img/projektovanje.jpg"
+               alt="">
         </div>
-        <div fxFlex="50" class="mj-section-div">
-          <h3 class="mj-section-title">O Nama</h3>
+        <div fxFlex="50"
+             class="mj-section-div">
+          <h3 class="mj-section-title">Projektovanje</h3>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vestibulum non mauris at
           sollicitudin. Donec commodo arcu posuere, ultrices risus vitae, dignissim felis. Sed sollicitudin vestibulum
           efficitur. Etiam sed purus sit amet turpis mollis tempor. Nullam pulvinar leo at turpis volutpat rutrum.
@@ -47,37 +54,60 @@
   </div>
 </section>
 <section class="mj-section mj-grid-layout">
-  <div class="mj-section-holder" fxLayout="row" fxLayoutAlign="stretch" fxLayout.xs="column">
-    <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover" fxLayout="row">
+  <div class="mj-section-holder"
+       fxLayout="row"
+       fxLayoutAlign="stretch"
+       fxLayout.xs="column">
+    <div fxFlex="50"
+         class="mj-section-div mj-red-kitchen mj-on-hover"
+         fxLayout="row">
       <div class="mj-section-header">
-        some text
+        kuhinje bla bla..
       </div>
       <div class="mj-section-footer">
-        <div fxLayout="row" fxLayoutAlign="space-between center" class="mj-section-footer-padding">
-          <span>some text</span>
-          <mat-icon mat-button>
+        <div fxLayout="row"
+             fxLayoutAlign="space-between center"
+             class="mj-section-footer-padding">
+          <span>kuhinje bla bla..</span>
+          <mat-icon
+            routerLink="/kitchens"
+            class="mj-section-footer-arrow">
             arrow_forward
           </mat-icon>
         </div>
       </div>
     </div>
-    <div fxFlex="50" class="mj-section-div">
-      <div fxLayout="column" fxLayoutAlign="stretch">
-        <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover" fxLayout="row">
-          <div class="mj-section-footer" fxFlexAlign="end">
-            <div fxLayout="row" fxLayoutAlign="space-between center" class="mj-section-footer-padding">
+    <div fxFlex="50"
+         class="mj-section-div">
+      <div fxLayout="column"
+           fxLayoutAlign="stretch">
+        <div fxFlex="50"
+             class="mj-section-div mj-red-kitchen mj-on-hover"
+             fxLayout="row">
+          <div class="mj-section-footer"
+               fxFlexAlign="end">
+            <div fxLayout="row"
+                 fxLayoutAlign="space-between center"
+                 class="mj-section-footer-padding">
               <span>some text</span>
-              <mat-icon mat-button>
+              <mat-icon
+                class="mj-section-footer-arrow">
                 arrow_forward
               </mat-icon>
             </div>
           </div>
         </div>
-        <div fxFlex="50" class="mj-section-div mj-red-kitchen mj-on-hover" fxLayout="row">
-          <div class="mj-section-footer" fxFlexAlign="end">
-            <div fxLayout="row" fxLayoutAlign="space-between center" class="mj-section-footer-padding">
+        <div fxFlex="50"
+             class="mj-section-div mj-red-kitchen mj-on-hover"
+             fxLayout="row">
+          <div class="mj-section-footer"
+               fxFlexAlign="end">
+            <div fxLayout="row"
+                 fxLayoutAlign="space-between center"
+                 class="mj-section-footer-padding">
               <span>some text</span>
-              <mat-icon mat-button>
+              <mat-icon
+                class="mj-section-footer-arrow">
                 arrow_forward
               </mat-icon>
             </div>

@@ -223,6 +223,15 @@ $img-url: '../../../assets/img/';
       .mj-section-footer-padding {
         padding: 0 3rem;
       }
+      .mj-section-footer-arrow{
+        color: $mj-secondary-color;
+        opacity: .5;
+        cursor: pointer;
+        transition: opacity .5s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
     .mj-section-header {
       position: absolute;
