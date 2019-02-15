@@ -114,6 +114,11 @@ mat-sidenav {
       display: flex;
       justify-content: center;
       transition: all .3s ease;
+
+      @include responsive(sm) {
+        padding-top: 1rem;
+        height: 5.4rem;
+      }
     }
   }
 
