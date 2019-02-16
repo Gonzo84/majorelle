@@ -4,6 +4,7 @@ import {HomeComponent} from './containers/home/home.component';
 import {KitchensComponent} from './containers/kitchens/kitchens.component';
 import {BathroomsComponent} from './containers/bathrooms/bathrooms.component';
 import {BedroomsComponent} from './containers/bedrooms/bedrooms.component';
+import {LivingroomsComponent} from './containers/livingrooms/livingrooms.component';
 
 const routes: Routes = [{
   path: 'home',
@@ -13,7 +14,7 @@ const routes: Routes = [{
   component: KitchensComponent
 }, {
   path: 'livingrooms',
-  component: KitchensComponent
+  component: LivingroomsComponent
 }, {
   path: 'bathrooms',
   component: BathroomsComponent
