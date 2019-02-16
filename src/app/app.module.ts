@@ -7,6 +7,8 @@ import {MaterialModule} from './material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
 import {AppRoutingModule} from './app-routing.module';
 
 import {AppComponent} from './app.component';
@@ -18,6 +20,7 @@ import {KitchensComponent} from './containers/kitchens/kitchens.component';
 import {NewsCardComponent} from './components/news-card/news-card';
 import { LivingroomsComponent } from './containers/livingrooms/livingrooms.component';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
     KitchensComponent,
     NewsCardComponent,
     LivingroomsComponent,
-    AppHeaderComponent
+    AppHeaderComponent,
+    GalleryComponent
   ],
   imports: [
     AppRoutingModule,
@@ -37,6 +41,7 @@ import { AppHeaderComponent } from './components/app-header/app-header.component
     BrowserModule,
     FlexLayoutModule,
     MaterialModule,
+    NgxGalleryModule,
     ScrollToModule.forRoot()
   ],
   providers: [],

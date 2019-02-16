@@ -6,6 +6,10 @@
 @import "mixins";
 @import "animations";
 
+.mat-sidenav-container, .mat-sidenav-content, .mat-tab-body-content {
+  transform: none !important;
+}
+
 /// Importing all fonts
 @include add-fonts($font-family,
   $font-family-light,
@@ -147,7 +151,7 @@ a {
     justify-content: center;
     text-align: center;;
     margin: 0 auto;
-    height: 50rem;
+    //height: 50rem;
     max-width: 114rem;
 
     @include responsive(xlg) {
