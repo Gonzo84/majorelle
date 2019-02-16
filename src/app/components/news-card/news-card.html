@@ -2,14 +2,16 @@
      fxLayoutAlign="space-between">
   <div fxFlex="30" fxLayoutAlign="start">
     <img
-      src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      alt="Photo of a Shiba Inu"></div>
+      [src]="data.imgUrl"
+      alt=""></div>
   <div fxFlex="50" class="mj-news-content">
-    <h2>naslov</h2>
-    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+    <h2>{{data.title}}</h2>
+    {{data.content}}
   </div>
   <div fxFlex="20" fxLayoutAlign="end center">
-    <mat-icon  class="mj-news-arrow">
+    <mat-icon
+      class="mj-news-arrow"
+      routerLink="{{data.navigation}}">
       arrow_forward
     </mat-icon>
   </div>

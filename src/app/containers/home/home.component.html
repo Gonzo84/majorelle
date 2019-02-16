@@ -39,7 +39,7 @@
            fxLayout.xs="column">
         <div fxFlex="50"
              class="mj-section-div">
-          <img src="assets/img/projektovanje.jpg"
+          <img src="assets/img/projektovanje_opt.png"
                alt="">
         </div>
         <div fxFlex="50"
@@ -117,13 +117,12 @@
     </div>
   </div>
 </section>
-<section class="mj-section mj_news_section" >
+<section class="mj-section mj_news_section">
   <div class="mj-section-holder">
     <div class="container">
       <h2 class="mj-section-title">
         News & Events
-        <app-news-card [data]="{}"></app-news-card>
-        <app-news-card [data]="{}"></app-news-card>
+        <app-news-card *ngFor="let news of newsConfig" [data]="news"></app-news-card>
       </h2>
     </div>
   </div>

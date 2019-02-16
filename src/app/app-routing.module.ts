@@ -12,6 +12,9 @@ const routes: Routes = [{
   path: 'kitchens',
   component: KitchensComponent
 }, {
+  path: 'livingrooms',
+  component: KitchensComponent
+}, {
   path: 'bathrooms',
   component: BathroomsComponent
 }, {

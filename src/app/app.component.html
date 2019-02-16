@@ -18,28 +18,36 @@
            routerLinkActive="is-active"
            [routerLinkActiveOptions]="{exact:true}"
            (click)="toggleSideMenues()"
-           (mouseover)="onNavigationHover('livingroom')">
+           (mouseover)="onNavigationHover('livingrooms/livingroom_01_opt')">
           <span class="label">Home</span>
+        </a>
+        <a mat-list-item
+           routerLink="/livingrooms"
+           routerLinkActive="is-active"
+           [routerLinkActiveOptions]="{exact:true}"
+           (click)="toggleSideMenues()"
+           (mouseover)="onNavigationHover('livingrooms/livingroom_02_opt')">
+          <span class="label">Living rooms</span>
         </a>
         <a mat-list-item
            routerLink="/kitchens"
            routerLinkActive="is-active"
            (click)="toggleSideMenues()"
-           (mouseover)="onNavigationHover('kitchens')">
+           (mouseover)="onNavigationHover('kitchens/kitchen_03_opt')">
           <span class="label">Kitchens</span>
         </a>
         <a mat-list-item
            routerLink="/bathrooms"
            routerLinkActive="is-active"
            (click)="toggleSideMenues()"
-           (mouseover)="onNavigationHover('bathrooms')">
+           (mouseover)="onNavigationHover('bathrooms/bathroom_03_opt')">
           <span class="label">Bathrooms</span>
         </a>
         <a mat-list-item
            routerLink="/bedrooms"
            routerLinkActive="is-active"
            (click)="toggleSideMenues()"
-           (mouseover)="onNavigationHover('bedrooms')">
+           (mouseover)="onNavigationHover('bedrooms/bedroom_01_opt')">
           <span class="label">Bedrooms</span>
         </a>
       </mat-nav-list>
@@ -53,7 +61,7 @@
          class="sidenav-img-container">
       <div class="sidenav-img-overlay">
         <img mat-card-image
-             src='assets/img/{{rightSideDrawerImgSrc}}.jpg'></div>
+             src='assets/img/{{rightSideDrawerImgSrc}}.png'></div>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>

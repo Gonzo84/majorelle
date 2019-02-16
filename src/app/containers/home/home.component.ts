@@ -19,8 +19,19 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
   ]
 })
 export class HomeComponent {
-  @ViewChild('whiteContainer') whiteContainer: ElementRef;
-  state = 'hide';
+  @ViewChild('whiteContainer') private whiteContainer: ElementRef;
+  private state = 'hide';
+  private newsConfig: any[] = [{
+    imgUrl: 'assets/img/kitchens/kitchen_01_opt.png',
+    title: 'Bla bla ..',
+    content: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.',
+    navigation: '/kitchens'
+  }, {
+    imgUrl: 'assets/img/kitchens/kitchen_02_opt.png',
+    title: 'Bla bla opet..',
+    content: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.',
+    navigation: '/kitchens'
+  }];
 
 
   @HostListener('window:scroll', ['$event'])

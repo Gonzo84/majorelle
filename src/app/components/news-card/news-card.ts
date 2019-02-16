@@ -7,7 +7,4 @@ import {Component, Input} from '@angular/core';
 })
 export class NewsCardComponent {
   @Input() data: any;
-
-  constructor() {
-  }
 }
