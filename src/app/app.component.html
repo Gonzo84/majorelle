@@ -50,6 +50,13 @@
            (mouseover)="onNavigationHover('bedrooms/bedroom_01_opt')">
           <span class="label">Bedrooms</span>
         </a>
+        <a mat-list-item
+           routerLink="/projecting"
+           routerLinkActive="is-active"
+           (click)="toggleSideMenues()"
+           (mouseover)="onNavigationHover('projektovanje_opt')">
+          <span class="label">Projecting</span>
+        </a>
       </mat-nav-list>
     </div>
   </mat-sidenav>

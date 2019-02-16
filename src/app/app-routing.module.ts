@@ -5,6 +5,7 @@ import {KitchensComponent} from './containers/kitchens/kitchens.component';
 import {BathroomsComponent} from './containers/bathrooms/bathrooms.component';
 import {BedroomsComponent} from './containers/bedrooms/bedrooms.component';
 import {LivingroomsComponent} from './containers/livingrooms/livingrooms.component';
+import {ProjectingComponent} from './containers/projecting/projecting.component';
 
 const routes: Routes = [{
   path: 'home',
@@ -21,6 +22,9 @@ const routes: Routes = [{
 }, {
   path: 'bedrooms',
   component: BedroomsComponent
+}, {
+  path: 'projecting',
+  component: ProjectingComponent
 }, {
   path: '',
   redirectTo: '/home',

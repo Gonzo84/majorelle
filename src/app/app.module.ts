@@ -21,6 +21,7 @@ import {NewsCardComponent} from './components/news-card/news-card';
 import { LivingroomsComponent } from './containers/livingrooms/livingrooms.component';
 import { AppHeaderComponent } from './components/app-header/app-header.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { ProjectingComponent } from './containers/projecting/projecting.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     NewsCardComponent,
     LivingroomsComponent,
     AppHeaderComponent,
-    GalleryComponent
+    GalleryComponent,
+    ProjectingComponent
   ],
   imports: [
     AppRoutingModule,
