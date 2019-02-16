@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {trigger, state, style, transition, animate} from '@angular/animations';
 
 @Component({
@@ -18,8 +18,9 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
     ])
   ]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   @ViewChild('whiteContainer') private whiteContainer: ElementRef;
+  @ViewChild('videPlayer') private videPlayer: ElementRef;
   private state = 'hide';
   private newsConfig: any[] = [{
     imgUrl: 'assets/img/kitchens/kitchen_01_opt.png',
@@ -32,6 +33,10 @@ export class HomeComponent {
     content: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.',
     navigation: '/kitchens'
   }];
+
+  public ngOnInit(): void {
+    this.videPlayer.nativeElement.muted = 'muted';
+  }
 
 
   @HostListener('window:scroll', ['$event'])
