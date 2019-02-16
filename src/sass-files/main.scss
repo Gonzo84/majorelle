@@ -128,3 +128,51 @@ a {
     padding: 0 !important;
   }
 }
+
+.mj-section {
+  padding: 5rem;
+
+  @include responsive(lg) {
+    padding: 3.5rem;
+  }
+
+  @include responsive(md) {
+    padding: 2rem;
+  }
+
+  .mj-section-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;;
+    margin: 0 auto;
+    height: 50rem;
+    max-width: 114rem;
+
+    @include responsive(xlg) {
+      min-height: 30rem;
+    }
+  }
+
+  .mj-section-div {
+    padding: 2rem 1rem;
+    text-align: justify;
+  }
+
+  .mj-section-title {
+    font-size: 3.8rem;
+    font-family: $fancy-font-family;
+    color: $mj-secondary-color;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .mj-section-text {
+    line-height: 2.4rem;
+    color: #333;
+    word-spacing: .3rem;
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+  }
+}

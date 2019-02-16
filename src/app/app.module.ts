@@ -17,6 +17,7 @@ import {HomeComponent} from './containers/home/home.component';
 import {KitchensComponent} from './containers/kitchens/kitchens.component';
 import {NewsCardComponent} from './components/news-card/news-card';
 import { LivingroomsComponent } from './containers/livingrooms/livingrooms.component';
+import { AppHeaderComponent } from './components/app-header/app-header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LivingroomsComponent } from './containers/livingrooms/livingrooms.compo
     HomeComponent,
     KitchensComponent,
     NewsCardComponent,
-    LivingroomsComponent
+    LivingroomsComponent,
+    AppHeaderComponent
   ],
   imports: [
     AppRoutingModule,
