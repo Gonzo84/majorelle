@@ -235,4 +235,9 @@ $img-url: '../../../assets/img/';
   background-color: $base-light-color;
   padding: 0;
   text-align: justify;
+
+  .mj-section-holder {
+    max-width: none;
+    height: 50rem;
+  }
 }
