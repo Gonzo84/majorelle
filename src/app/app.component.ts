@@ -8,7 +8,7 @@ import {Component, ViewChild} from '@angular/core';
 export class AppComponent {
   @ViewChild('leftSideDrawer') public leftSideDrawer: any;
   @ViewChild('rightSideDrawer') public rightSideDrawer: any;
-  public rightSideDrawerImgSrc: string = 'livingroom';
+  public rightSideDrawerImgSrc: string = 'livingrooms/livingroom_01_opt';
 
   public toggleSideMenues() {
     this.leftSideDrawer.toggle();

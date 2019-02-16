@@ -11,6 +11,11 @@
   box-sizing: border-box;
   transition: background-color, opacity .7s ease;
 
+  img {
+    height: 12rem;
+    width: auto;
+  }
+
   &:hover {
     opacity: 1;
     background-color: #242425;
@@ -18,11 +23,6 @@
     .mj-news-arrow {
       display: block !important;
     }
-  }
-
-  img {
-    height: 100%;
-    width: auto;
   }
 
   .mj-news-content {
