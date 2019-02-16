@@ -23,6 +23,10 @@ mat-sidenav-container {
   background-color: $base-color;
   padding: 20px 0 0 56px;
 
+  @include responsive(sm) {
+    padding: 20px 0 0 6px;
+  }
+
   .mj-side-nav-close-btn {
     display: flex;
     cursor: pointer;

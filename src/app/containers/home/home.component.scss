@@ -161,10 +161,19 @@ $img-url: '../../../assets/img/';
     }
   }
 
-  .mj-red-kitchen {
+  .mj-kitchen-background {
     background-image: url("#{$img-url}kitchens/kitchen_03_opt.png");
     background-size: cover;
+  }
 
+  .mj-livingroom-background {
+    background-image: url("#{$img-url}livingrooms/livingroom_04_opt.png");
+    background-size: cover;
+  }
+
+  .mj-bathroom-background {
+    background-image: url("#{$img-url}bathrooms/bathroom_04_opt.png");
+    background-size: cover;
   }
 
   .mj-on-hover {
