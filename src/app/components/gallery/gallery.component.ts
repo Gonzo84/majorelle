@@ -15,7 +15,11 @@ export class GalleryComponent implements OnInit {
     this.galleryOptions = [{
       width: '600px',
       height: '400px',
-      thumbnailsColumns: 4,
+      thumbnails: false,
+      imageBullets: true,
+      arrowPrevIcon: 'fa fa-angle-left',
+      arrowNextIcon: 'fa fa-angle-right',
+      imageSwipe: true,
       imageAnimation: NgxGalleryAnimation.Slide
     }, {
       breakpoint: 800,

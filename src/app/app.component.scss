@@ -47,10 +47,17 @@ mat-sidenav-container {
   }
 
   .mj-side-nav-list-wrap {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin-top: 2rem;
+
+    @include responsive(sm) {
+      display: unset;
+      .mat-list-item {
+        height: 3.2rem !important;
+      }
+    }
   }
 
   .mj-side-nav-title {
@@ -69,6 +76,10 @@ mat-sidenav-container {
       width: 4rem;
       height: 2px;
     }
+
+    @include responsive(sm) {
+      display: none;
+    }
   }
 
   .label {
@@ -81,6 +92,13 @@ mat-sidenav-container {
 
     &:hover {
       color: $mj-secondary-color;
+    }
+
+    @include responsive(sm) {
+      font-size: 1.2rem;
+      a.mat-list-base .mat-list-item {
+        height: 1.2rem !important;
+      }
     }
   }
 
@@ -96,6 +114,9 @@ mat-sidenav-container {
   .sidenav-img-overlay {
     display: block;
     position: relative;
+    @include responsive(sm) {
+      display: none;
+    }
   }
 
   .sidenav-img-overlay:before {
@@ -153,7 +174,7 @@ mat-sidenav-container {
 
     img {
       padding-top: 0.4rem;
-      height: 6rem;
+      height: 12rem;
       width: auto;
 
       display: flex;

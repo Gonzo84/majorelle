@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class BedroomsComponent {
 
-  private headerConfig: any = {
+  public headerConfig: any = {
     backgroungImgUrl: 'assets/img/bedrooms/bedroom_01_opt.png',
     title: 'Bedrooms bla bla..',
     subTitle: 'subtitle bla bla bla...',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rutrum ut nulla id dictum.'
   };
 
-  private galleryConfig: any[] = [{
+  public galleryConfig: any[] = [{
     small: 'assets/img/bedrooms/bedroom_01_opt.png',
     medium: 'assets/img/bedrooms/bedroom_01_opt.png',
     big: 'assets/img/bedrooms/bedroom_01_opt.png'

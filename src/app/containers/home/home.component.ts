@@ -21,16 +21,21 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
 export class HomeComponent implements OnInit {
   @ViewChild('whiteContainer') private whiteContainer: ElementRef;
   @ViewChild('videPlayer') private videPlayer: ElementRef;
-  private state = 'hide';
-  private newsConfig: any[] = [{
-    imgUrl: 'assets/img/kitchens/kitchen_01_opt.png',
-    title: 'Bla bla ..',
-    content: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.',
-    navigation: '/kitchens'
-  }, {
-    imgUrl: 'assets/img/kitchens/kitchen_02_opt.png',
-    title: 'Bla bla opet..',
-    content: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.',
+  public state = 'hide';
+  public newsConfig: any[] = [{
+    img1Url: 'assets/img/news/klub_sto_01.png',
+    img2Url: 'assets/img/news/klub_sto_02.png',
+    title: 'Klub sto u industrijskom stilu',
+    content: 'Dimenzije većeg stola: visina 45cm, prečnik 90cm \n' +
+      'Dimenzije manjeg stola: visina 35cm, prečnik 70cm\n' +
+      'Debljina ploče: 3.6cm, debljina profila postolja 1.5cm\n' +
+      '\n' +
+      'Materijal: orahov furnir na medijapanu i metal \n' +
+      'Cena oba stola: 30.000,00 dinara\n' +
+      '   *Sa pločom od farbanog medijapana cena je 26.000,00, a \n' +
+      '    sa pločom od iverice cena je 18.000,00 dinara,\n' +
+      '    u boji i dezenu koji Vi odaberete.\n' +
+      'Rade se po narudžbini, rok isporuke je 2 nedelje.\n',
     navigation: '/kitchens'
   }];
 

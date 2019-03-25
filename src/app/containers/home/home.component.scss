@@ -75,7 +75,7 @@ $img-url: '../../../assets/img/';
       justify-content: center;
       margin-bottom: 1.5rem;
       text-align: center;
-      max-width: 500px;
+      //max-width: 500px;
       word-spacing: .2rem;
 
       @include responsive(md) {
@@ -161,8 +161,13 @@ $img-url: '../../../assets/img/';
     }
   }
 
+  .mj-wordart {
+    background-image: url("#{$img-url}word_art.png");
+    background-size: cover;
+  }
+
   .mj-kitchen-background {
-    background-image: url("#{$img-url}kitchens/kitchen_03_opt.png");
+    background-image: url("#{$img-url}kitchens/kitchen_04_opt.png");
     background-size: cover;
   }
 
@@ -185,28 +190,22 @@ $img-url: '../../../assets/img/';
       position: absolute;
       display: none !important;
       bottom: 0;
-      height: 5rem;
+      height: 7rem;
       width: 100%;
       animation: slide-down-on-hover .5s ease;
 
       .mj-section-footer-padding {
         padding: 0 3rem;
-      }
 
-      .mj-section-footer-arrow {
-        font-size: 3rem;
-        color: $mj-secondary-color;
-        cursor: pointer;
-        -webkit-transition: -moz-transform .1s ease-out;
-        -moz-transition: -webkit-transform .1s ease-out;
-        -o-transition: -o-transform .1s ease-out;
-        transition: transform .1s ease-out;
+        span {
+          font-size: 4rem;
+          font-family: $font-family;
+          font-weight: 600;
+        }
 
-        &:hover {
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          -o-transform: scale(1.1);
-          transform: scale(1.1);
+        .mat-icon {
+          height: unset;
+          width: unset;
         }
       }
     }
@@ -225,9 +224,28 @@ $img-url: '../../../assets/img/';
       opacity: 1;
 
       .mj-section-footer {
+        color: $mj-secondary-color;
         display: block !important;
+        background-color: rgba(0, 0, 0, .3);
       }
     }
+  }
+}
+
+.mj-section-footer-arrow {
+  font-size: 5rem;
+  color: $mj-secondary-color;
+  cursor: pointer;
+  -webkit-transition: -moz-transform .1s ease-out;
+  -moz-transition: -webkit-transform .1s ease-out;
+  -o-transition: -o-transform .1s ease-out;
+  transition: transform .1s ease-out;
+
+  &:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
@@ -239,5 +257,32 @@ $img-url: '../../../assets/img/';
   .mj-section-holder {
     max-width: none;
     height: 50rem;
+
+
+    @include responsive(sm) {
+      height: auto;
+    }
+  }
+}
+
+.mj-about-us {
+  p {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .mj-majorelle-name{
+    color: $mj-secondary-color;
+    font-weight: 600;
+  }
+}
+
+#white_cont {
+  .mj-section-div {
+    p {
+      text-align: center;
+      font-size: 2rem;
+      margin: 9rem 0;
+    }
   }
 }

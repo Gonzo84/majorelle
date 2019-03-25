@@ -116,6 +116,9 @@ $img-url: '../../../assets/img/';
     flex: 1;
     line-height: 1.7rem;
     font-size: 1.4rem;
+    a {
+      margin-left: 1rem;
+    }
 
     @include responsive(md) {
       order: 1;

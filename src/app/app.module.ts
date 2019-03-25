@@ -22,6 +22,8 @@ import { LivingroomsComponent } from './containers/livingrooms/livingrooms.compo
 import { AppHeaderComponent } from './components/app-header/app-header.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ProjectingComponent } from './containers/projecting/projecting.component';
+import { FirmsComponent } from './containers/firms/firms.component';
+import { OfficeFurnitureComponent } from './containers/office-furniture/office-furniture.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ProjectingComponent } from './containers/projecting/projecting.componen
     LivingroomsComponent,
     AppHeaderComponent,
     GalleryComponent,
-    ProjectingComponent
+    ProjectingComponent,
+    FirmsComponent,
+    OfficeFurnitureComponent
   ],
   imports: [
     AppRoutingModule,

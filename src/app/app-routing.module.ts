@@ -6,6 +6,8 @@ import {BathroomsComponent} from './containers/bathrooms/bathrooms.component';
 import {BedroomsComponent} from './containers/bedrooms/bedrooms.component';
 import {LivingroomsComponent} from './containers/livingrooms/livingrooms.component';
 import {ProjectingComponent} from './containers/projecting/projecting.component';
+import {FirmsComponent} from './containers/firms/firms.component';
+import {OfficeFurnitureComponent} from './containers/office-furniture/office-furniture.component';
 
 const routes: Routes = [{
   path: 'home',
@@ -16,6 +18,12 @@ const routes: Routes = [{
 }, {
   path: 'livingrooms',
   component: LivingroomsComponent
+}, {
+  path: 'firms',
+  component: FirmsComponent
+}, {
+  path: 'office-furniture',
+  component: OfficeFurnitureComponent
 }, {
   path: 'bathrooms',
   component: BathroomsComponent
